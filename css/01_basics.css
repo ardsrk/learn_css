@@ -1,0 +1,13 @@
+/* CSS Rule */
+body {
+  color: blue;
+}
+
+ /* A CSS rule is composed of selectors and declarations.
+ * Each declaration is composed of a property and a value. */
+
+
+/* "body" is a selector.
+ * "color: blue;" is a declaration.
+ * "color" is a property.
+ * "blue" is a value. */
