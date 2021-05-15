@@ -5,7 +5,7 @@
   <body>
     <h1>Specificity</h1>
     <article>
-      <p> A stylesheet may contain many CSS rules and declarations in one rule may conflict with a delcaration in another rule.</p>
+      <p> A stylesheet may contain many CSS rules. A declaration in one rule may conflict with a declaration in another rule.</p>
       <p>
       Example: 
       <div>
@@ -14,6 +14,8 @@
       </div>
       </p>
       <p>
+      In the example above a conflict occurs for the "font-weight" declaration. Conflicts are resolved by considering the 
+      sepcificity of the rule. Rules with higher specificity override rules with lower specificity.
       Here is a list of selectors with increasing order of specificity:
       <ol>
         <li>Type selectors ( <em>div</em> )</li>
