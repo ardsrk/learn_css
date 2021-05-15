@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/02_specificity.css">
+  </head>
+  <body>
+    <h1>Specificity</h1>
+    <article>
+      <p> A stylesheet may contain many CSS rules and declarations in one rule may conflict with a delcaration in another rule.</p>
+      <p>
+      Example: 
+      <div>
+        All text in this div will appear in green color. <span class="sentence">However, this sentence will appear in red color,
+          <span id="phrase">and this phrase within the sentence will appear in blue color.</span></span>
+      </div>
+      </p>
+      <p>
+      Here is a list of selectors with increasing order of specificity:
+      <ol>
+        <li>Type selectors ( <em>div</em> )</li>
+        <li>Class selectors ( <em>sentence</em> )</li>
+        <li>ID selectors ( <em>phrase</em> )</li>
+      </ol>
+      </p>
+      <h2>Cascading and Reset</h2>
+      <p> Notice that <em>sentence</em> inherits the <span class="bold">"font-weight: bold;"</span> style from <em>div</em>. The "font-weight" declaration
+      cascades from <em>div</em> into <em>sentence</em>. The <em>phrase</em> undoes the effect of cascading by applying a
+      reset of "font-weight: initial;".
+      <h2>References</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">Specificity</a></li>
+        <li><a href="https://stackoverflow.com/questions/7398279/remove-reset-inherited-css-from-an-element" target="_blank">Reset property values</a></li>
+      </ul>
+    </article>
+  </body>
+</html>

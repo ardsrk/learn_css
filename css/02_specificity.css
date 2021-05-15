@@ -1,0 +1,23 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+div {
+  color: green;
+  font-weight: bold;
+}
+
+.sentence {
+  color:  red;
+}
+
+#phrase {
+  color: blue;
+  font-weight: initial;
+}
+
+.bold {
+  font-weight: bold;
+}
