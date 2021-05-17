@@ -1,0 +1,16 @@
+.content_box {
+  margin: 30;
+  border: 5px green solid;
+  padding: 30;
+  width: 100px;
+  height: 100px;
+}
+
+.border_box {
+  margin: 30;
+  border: 5px blue solid;
+  padding: 30;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
