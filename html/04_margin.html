@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/04_margin.css">
+  </head>
+  <body>
+    <h1>Margin</h1>
+    <article>
+      <h2>Margin Collapse</h2>
+      Margins are the outermost element of a box. Positive margin values are intuitive, however, negative margins,
+      and margin collapse are trickier and need explanation.
+
+      <div class="box1">
+        BOX1
+      </div>
+
+      <div class="box2">
+        BOX2
+      </div>
+      <p>
+      BOX1 has a bottom margin of 10px and BOX2 has a top margin of 20px. Therefore, we would expect them to be 30 pixels
+      apart. However, the bottom margin of BOX1 collapses with the top margin of BOX2 and they end up 20 pixels apart.
+      </p>
+      <div class="box3">
+        <div class="box4">
+          BOX4
+        </div>
+      </div>
+      <p>
+      Now, the top margins of <em>.box3</em> and <em>.box4</em> collapse and the space between BOX4 and the paragraph
+      above it is only 30px instead of the expected 40px. Margins of parent and child elements collapse only when the
+      parent does not have border, padding, and content.
+      </p>
+      <h2>Negative margins</h2>
+      <p>
+      Negative margins pull the adjacent elements closer.
+      </p>
+      <div class="box5">
+        BOX5
+      </div>
+      <div class="box6">
+        BOX6
+      </div>
+      <p>
+      The last box has a margin of 30px while the box above has a margin of -40px. Since both the boxes do not have
+      padding and border, their contents end up getting overlapped.
+      </p>
+    </article>
+    <div class="nav">
+      <a href="../html">Parent Directory</a>
+    </div>
+  </body>
+</html>
