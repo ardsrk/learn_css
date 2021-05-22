@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/05_flow_layout.css">
+  </head>
+  <body>
+    <h1>Flow Layout</h1>
+    <article>
+      <p>
+      <strong>Block elements</strong> take up the full horizontal space. Notice the heading above. The heading occupies all the available
+      width even though it has only 11 characters. Most of the elements like div, h1, p, form, and so forth are block
+      elements. They stack along the vertical direction.
+      </p>
+
+      <p>
+      <strong>Inline elements</strong> take up only space that is required. <span class="red">This span in red is inline.</span> Inline
+      elements like em, strong, span, and so forth grow in the horizontal direction and wrap to the next line if current line
+      cannot fit the element.
+      </p>
+
+      <p>
+      <strong>Inline block elements</strong> act as block elements internally, while externally rendered as inline. The button
+      tag and select tag are inline-block elements by default. The button <button>do not press</button> has a width and a height
+      but does not occupy the whole horizontal space. Also notice that, inline-block elements <em>do not line-wrap</em>.
+      </p>
+      
+      <p>
+      The <strong>display</strong> property can be set to override the default behaviour. See the <em>div</em> boxes acting as
+      inline elements below. Also notice that the left and right margins of the <strong>boxes do not collapse</strong> and 
+      the top and bottom margins are <strong>ignored</strong>. It is not recommended to set border, margin, and
+      padding properties on inline elements as the behavior is not well-defined.
+      </p>
+
+      <div class="box">BOX1</div><div class="box">BOX2</div><div class="box">BOX3</div><div class="box">BOX4</div>
+    </article>
+    <div class="nav">
+      <a href="../html">Parent Directory</a>
+    </div>
+  </body>
+</html>
