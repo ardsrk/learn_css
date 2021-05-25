@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/06_understanding_width.css">
+  </head>
+  <body>
+    <h1>Understanding Width</h1>
+    <article>
+      <p>
+      The default value of the width property for block elements is <strong>auto</strong>. By default, a block-element will
+      occupy all the space provided by its parent. The <em>div</em> occupies 800 pixels ( including margin ), because that is the width set on
+      the document <em>body</em>.
+      </p>
+      <div class="yellow center">auto width</div>
+      <p>
+      An element can choose to override the default by setting the width property. Width of <em>div</em> below is 400 pixels
+      because it's width is set to 50%.
+      <div class="yellow fifty">50% width</div>
+      <p>A width of 100% will make the <em>div</em> use 800 pixels for its content causing it to break out from the parent's
+      bounds.
+      </p>
+      <div class="yellow hundred">100% width</div>
+    </article>
+    <div class="nav">
+      <a href="../html">Parent Directory</a>
+    </div>
+  </body>
+</html>
