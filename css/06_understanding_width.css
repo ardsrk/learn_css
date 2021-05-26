@@ -17,3 +17,25 @@
   text-align: center;
   margin-left: 50px;
 }
+
+.min-content{
+  width: min-content;
+  border: solid;
+}
+
+.max-content{
+  width: max-content;
+}
+
+img {
+  width: 500px;
+}
+
+.fit-content{
+  width: fit-content;
+}
+
+.parent {
+  width: 100px;
+  background-color: yellow;
+}

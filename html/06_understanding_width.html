@@ -20,6 +20,20 @@
       bounds.
       </p>
       <div class="yellow hundred">100% width</div>
+      <p>While <em>auto</em> consumes width provided by the parent, the <strong>min-content</strong> value consumes width based on
+      its children.</p>
+      <div class="min-content">min content takes the width needed by the <strong>lonngggest</strong> word</div>
+      <p>The value <strong>max-content</strong> is the opposite of <em>min-content</em>. It consumes width needed to fit
+      its children in a single line.</p>
+      <div class="parent">
+        <div class="max-content">Max Content never wraps. <img src="../images/shimla.png"></img></div>
+      </div>
+      <p>The value <strong>fit-content</strong> never exceeds space provided by its parent and acts like <em>auto</em>.
+      If the content of its children fit the width then it does not break up the contents and acts like
+      <em>max-content</em>.</p>
+      <div class="parent">
+        <div class="fit-content">Fit Content fits to the availabe width</div>
+      </div>
     </article>
     <div class="nav">
       <a href="../html">Parent Directory</a>
