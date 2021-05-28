@@ -1,3 +1,13 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.nav {
+  padding-top: 32px;
+}
+
 .yellow{
   background-color: yellow;
 }
@@ -38,4 +48,12 @@ img {
 .parent {
   width: 100px;
   background-color: yellow;
+}
+
+.minmax {
+  max-width: 600px;
+  min-width: 100px;
+  margin: 0 auto;
+  background-color: yellow;
+  text-align: center;
 }
