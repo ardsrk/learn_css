@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/10_flexbox.css">
+    <script src="../javascript/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#flex_control").change(function(){
+          $("#flex").css("flex-direction", $(this).val());
+        });
+        $("#align_control").change(function(){
+          $("#flex").css("align-items", $(this).val());
+        });
+        $("#justify_content").change(function(){
+          $("#flex").css("justify-content", $(this).val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <div id="parent_div">
+      <div id="flex">
+        <div id="red">Red</div>
+        <div id="blue" id="bluebox">Blue</div>
+        <div id="green">Green</div>
+        <div id="orange">Orange</div>
+      </div>
+    </div>
+    <div id="controls">
+      <label>Flex Direction</label>
+      <select id="flex_control">
+        <option value="row">Row</option>
+        <option value="column">Column</option>
+      </select>
+      <label>Justify Content</label>
+      <select id="justify_content">
+        <option value="start">Start</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+      </select>
+      <label>Align Items</label>
+      <select id="align_control">
+        <option value="stretch">Stretch</option>
+        <option value="flex-start">Start</option>
+        <option value="flex-end">End</option>
+        <option value="center">Center</option>
+      </select>
+    </div>
+    <div class="nav">
+      <a href="../html">Parent Directory</a>
+    </div>
+  </body>
+</html>
